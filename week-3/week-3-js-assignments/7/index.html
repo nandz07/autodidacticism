@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter the number for get its multiplication table </label>
+        <input type="text" name="num" id="num">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+        var btn=document.getElementById("button")
+        btn.addEventListener("click",()=>{
+            var num=document.getElementById("num").value
+            for (let i = 1; i <=10; i++) {
+                console.log(i+" X "+num+" = "+i*num)
+                
+            }
+        })
+    </script>
+</body>
+
+</html>

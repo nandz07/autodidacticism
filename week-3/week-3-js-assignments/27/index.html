@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var data= prompt("enter the height")
+        if(isNaN(data)){
+                throw new Error("entered value is not a number");
+            }
+            else if(data>200){
+                throw new Error("entered value is greater than 200");
+                
+            }else if(data<40){
+                throw new Error("entered value is less than 40");
+
+            }else{
+                console.log(`height is ${data}`);
+            }
+            
+    </script>
+</body>
+</html>

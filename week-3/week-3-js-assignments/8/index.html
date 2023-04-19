@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter a limit</label>
+        <input type="text" name="limit" id="limit">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+        var btn=document.getElementById("button")
+        btn.addEventListener("click",()=>{
+            var limit =document.getElementById("limit").value
+            let sum=0
+            for (let i = 1; i < limit; i++) {
+               if(i%2!=0){
+                    sum+=i;
+               }
+            }
+            console.log("sum of odd numbers ="+sum)
+        })
+    </script>
+</body>
+
+</html>

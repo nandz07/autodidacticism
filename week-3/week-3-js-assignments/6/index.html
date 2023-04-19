@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter :<br>1 for Sunday<br>2 for Monday
+            <br>3 for Tuesday <br>4 for Wednesday
+            <br>5 for Thursday <br>6 for Friday
+            <br>7 for Saturday <br> </label>
+        <input type="text" name="choice" id="choice">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+        var btn = document.getElementById("button")
+        btn.addEventListener("click", () => {
+            var choice = document.getElementById("choice").value
+
+            switch (choice) {
+                case "1":
+                    console.log("It is sunday")
+                    break;
+                case "2":
+                    console.log("It is monday")
+                    break
+                case "3":
+                    console.log("It is tuesday")
+                    break
+                case "4":
+                    console.log("It is wednesday")
+                    break
+                case "5":
+                    console.log("It is thursday")
+                    break
+                case "6":
+                    console.log("It is friday")
+                    break
+                case "7":
+                    console.log("It is satarday")
+                    break
+                default:
+                    console.log("Ivalid entry")
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.one,.two,.three{
+    width: 300px;
+    /* flex: 1; */
+    height: 200px;
+    background-color: orange;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    /* float: left; */
+}
+/* .two{
+    flex:2;
+} */
+.container{
+    background-color: lightblue;
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    
+}
+/* usefull while order change in mobile responsive */
+.one{
+    order:3;
+}
+.two{
+    order: 2;
+}
+.three{
+    order:1;
+}

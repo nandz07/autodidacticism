@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       var limit =prompt("enter the size of array")
+       var a=[]
+       var b=[]
+       alert("enter the value of first array")
+       for(let i=0;i<limit;i++){
+        
+          a[i]= prompt("enter the value of first array")
+       }
+       alert("enter the value of second array")
+       for(let i=0;i<limit;i++){
+           b[i]= prompt("enter the value of second array")
+       }
+
+       for(let i=0;i<limit;i++){
+            let temp=a[i]
+            a[i]=b[i]
+            b[i]=temp
+       }
+       console.log("first array:"+a)
+       console.log("second array:"+b)
+    </script>
+</body>
+
+</html>

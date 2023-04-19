@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter the mark please </label>
+        <input type="text" name="mark" id="mark">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+       let btn=document.getElementById("button");
+       btn.addEventListener("click",()=>{
+            var mark = parseFloat(document.getElementById("mark").value);
+            if(mark>=50){
+                console.log("you are passed");
+            }else{
+                console.log("you are failed");
+            }
+       })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+04-Forms
+>		Inline vs block elements
+	
+	-inline will only take up necessary width
+	 Example:<input>,<img>,<span>,<a>
+
+	-Block will take up the entire width
+	 Example:<div>,<p>,<h1>-<h6>,<form>
+

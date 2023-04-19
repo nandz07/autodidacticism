@@ -1,0 +1,15 @@
+/* multiselector */
+h1,h2,h3{
+    color: chocolate;
+}
+.common{
+    background-color:lightblue
+    /* priority goes to class */
+}
+p{
+    background-color: pink;
+}
+.first-para{
+    color: white;
+    background-color: brown;
+}

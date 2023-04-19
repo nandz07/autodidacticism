@@ -1,0 +1,44 @@
+
+04-Forms
+>		Inline vs block elements
+	
+	-inline will only take up necessary width
+	 Example:<input>,<img>,<span>,<a>
+
+	-Block will take up the entire width
+	 Example:<div>,<p>,<h1>-<h6>,<form>
+
+
+/* vd_3_marginPadding */
+
+body{
+    /* body margin get set by defult-so we need to change */
+    margin: 0px;
+    /* what we declared in the body will be commen to every 
+    one untill it get change */
+}
+
+h1{
+    /* h1 also have default margin */
+    margin: 0px;
+    color: red;
+    padding: 10px;
+}
+/* vd_4 multiple_selector */
+/* multiselector */
+h1,h2,h3{
+
+}
+/* vd_5 inline vs block */
+ /* to make block element to inline */
+ display: inline;
+ /* work as inline in big screen and go for block while get small */
+ display: inline-block;
+
+ div{
+    display: inline-block;/* act as inline when screen reduce go for next line */
+    display: inline;/* if ther is no content nothing will display*/
+    width: 300px;
+    height: 500px;
+    background-color: lightblue;
+}

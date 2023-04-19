@@ -1,0 +1,12 @@
+#section-1 h1{
+ color: red;   
+}
+#section-1 h2{
+    color: blue;
+}
+#section-1 p{
+    background-color: pink;
+}
+ul li a{
+    color: orange;
+}

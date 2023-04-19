@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter the Principal amount please</label>
+        <input type="text" name="num1" id="num1">
+        <br>
+        <label for="">Enter the Interest rate please</label>
+        <input type="text" name="num2" id="num2">
+        <br>
+        <label for="">Enter numer of years please</label>
+        <input type="text" name="num3" id="num3">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+        let btn = document.getElementById("button")
+        btn.addEventListener("click", () => {
+            var p =parseInt( document.getElementById("num1").value)
+            var r = parseFloat( document.getElementById("num2").value)
+            var n = parseFloat(document.getElementById("num3").value)
+            
+            simpleInterest=parseFloat((p*r*n)/100)
+            console.log("simple interest ="+simpleInterest)
+        })
+    </script>
+</body>
+
+</html>

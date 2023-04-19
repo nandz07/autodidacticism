@@ -1,0 +1,121 @@
+*{
+    font-family: sans-serif;
+    padding: 0px;
+    font-size: 14px;
+    margin: 0;
+}
+:root{
+    --white:#ffff;
+    --bgblack:#262626;
+    --orange:#e37400;
+    --grey:#70757a;
+}
+
+.section_navbar .nav
+{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    padding: 0px 15px;
+}
+.container {
+    max-width: 70%;
+    margin: auto;
+    box-shadow: 5px 0 15px -4px lightgrey, -5px 0 8px -4px lightgrey;
+}
+.section_page .world_delayed {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 30px 6px 20px 6px;
+}
+.section_page a {
+    text-decoration: none;
+    /* padding-right: 20px; */
+    margin-right: 20px;
+}
+.section_page .world_delayed >div:last-child{
+    color: var(--orange);
+}
+.section_page .teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section_page .teams p {
+    text-align: center;
+}
+.section_page .score {
+    color: var(--grey);
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.section_page .watch_live  {
+    text-decoration: none;
+    /* padding-right: 20px; */
+    margin-right: 20px;
+    color: var(--grey);
+}
+.section_page .watch_live a
+{
+    color: var(--grey);
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 6px 15px;
+    display: inline-block;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* margin-top: 15px; */
+    margin: 15px 0;
+}
+/* -----------------------------------
+        next session
+-----------------------------------*/
+
+.video_section .highlights {
+    display: flex;
+    padding: 30px 15px;
+    overflow-x: auto;
+}
+
+.video_section .highlights .single_vd {
+    position: relative;
+    margin-right: 15px;
+}
+
+.video_section .highlights .single_vd img
+{ 
+    height: 200px;
+    width: 324px;
+    border-radius: 15px;
+}
+.video_section .highlights .single_vd div {
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    padding-left: 20px;
+    background: rgb(0 0 0 / 23%);
+    left: 0px;
+    right: 0px;
+    text-align: left;
+    padding: 10px 0px 10px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*-------------comment section----------- */
+
+.comment_section .list_row ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 20px; */
+}
+.comment_section .list_row ul li
+{
+    padding: 20px;
+}

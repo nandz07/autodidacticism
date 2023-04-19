@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">enter first the number</label>
+    <input type="text" name="data1" id="data1">
+    <br>
+    <label for="">enter second the number</label>
+    <input type="text" name="data2" id="data2"><br>
+    <label for="">enter 1 for addition <br>enter 2 for subtraction <br>
+        enter 3 for multiplication <br>enter 4 for divition <br></label>
+    <input type="text" name="operation" id="operation"><br>
+    <p></p>
+    <button id="btn">submit</button>
+    <script>
+    document.getElementById("btn").addEventListener("click",()=>{
+        var data1=document.getElementById("data1").value
+        var data2=document.getElementById("data2").value
+        var operation=document.getElementById("operation").value
+        let obj1=new operations();
+        switch(operation){
+            case "1":
+                console.log(data1+"+"+data2+"="+ obj1.addition(data1,data2))
+                break
+            case "2":
+                console.log(data1+"-"+data2+"="+ obj1.subtraction(data1,data2))
+                break
+            case "3":
+                console.log(data1+"X"+data2+"="+ obj1.multiplication(data1,data2))
+                break
+            case "4":
+                console.log(data1+"/"+data2+"="+ obj1.division(data1,data2))
+                break
+            default:
+                console.log("entered value is invalid")
+                break
+        }
+    })
+      class operations{
+        addition(a,b){
+            return parseInt(a)+parseInt(b)
+            
+        }
+        subtraction(a,b){
+            return parseInt(a)-parseInt(b)
+        }
+        multiplication(a,b){
+            return parseInt(a)*parseInt(b)
+        }
+        division(a,b){
+            return parseInt(a)/parseInt(b)
+        }
+      }
+    </script>
+</body>
+
+</html>

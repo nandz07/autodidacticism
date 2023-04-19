@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Enter the annual income</label>
+    <input type="text" name="income" id="income"><br>
+    
+    <button id="btn">submit</button>
+    <script>
+    document.getElementById("btn").addEventListener("click",()=>{
+        var income=parseInt( document.getElementById("income").value)
+        console.log("income tax amount = "+incomeTax(income))
+        
+    })
+    function incomeTax(income){
+        if(income<=250000){
+            return "0"
+        }
+        else if(income <=500000){
+            return income*0.05
+        }
+        else if(income <=1000000){
+            return income*0.2
+        }
+        else if(income <=5000000){
+            return income*0.3
+        }
+    }
+    </script>
+</body>
+
+</html>

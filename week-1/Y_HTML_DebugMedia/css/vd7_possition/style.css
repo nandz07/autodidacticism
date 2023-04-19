@@ -1,0 +1,17 @@
+/* div{
+    max-width: 500px;
+    min-height: 200px;
+    background-color: lightblue;
+    
+} */
+
+.section-1
+{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: lightblue;
+    top: 0;
+    left: 0;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function main() {
+            var a=getArray()
+            var b=getArray()
+            var c=addArray(a,b,c)
+            displayArray(c)
+        }
+        function getArray() {
+            let a=[[]]
+            n=prompt("enter the limit of array")
+            alert("enter the elements of array")
+            for(let i=0;i<n;i++){
+                for(let j=0;j<n;j++){
+                    a[[i,j]]=parseInt( prompt("enter the element"))
+                }
+            }
+            alert("done")
+            return a
+        }
+        function addArray(a,b) {
+            let c=[[]]
+            for(let i=0;i<n;i++){
+                for(let j=0;j<n;j++){
+                    c[[i,j]]=a[[i,j]]+b[[i,j]]
+                }
+            }
+            return c
+        }
+        function displayArray(c) {
+            var s=""
+            for(let i=0;i<n;i++){
+                for(let j=0;j<n;j++){
+                    s+=c[[i,j]]+" "
+                }
+                s+="\n"
+            }
+            console.log(s)
+        }
+        main()
+    </script>
+</body>
+
+</html>

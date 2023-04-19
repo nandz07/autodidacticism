@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <script>
+        var n=prompt("enter the limit of array")
+        var a=[[]]
+        var b=[[]]
+        var c=[[]]
+        // Number(prompt("enter array element"))
+
+        alert("enter elements of first array")
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                a[[i,j]]= prompt("enter array element")
+            }
+        }
+        alert("enter elements of second array")
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                b[[i,j]]= prompt("enter array element")
+            }
+        }
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                c[[i,j]]=parseInt(a[[i,j]])+parseInt(b[[i,j]]) 
+            }
+        }
+        var s=""
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n;j++){
+                s+=c[[i,j]]+" "
+            }
+            s+="\n"
+        }
+        console.log(s)
+    </script>
+</body>
+
+</html>

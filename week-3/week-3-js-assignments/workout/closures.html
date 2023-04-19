@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            var r = hai()
+            console.log(r)
+        })
+        var hai = () => {
+            let c = 0
+            return function () {
+                c += 1
+                return c
+            }
+                ()
+        }
+
+        const person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "blue";
+        console.log(person)
+
+        var library = [
+            {
+                title: 'Bill Gates',
+                author: 'The Road Ahead',
+                readingStatus: true
+            },
+            {
+                title: 'Steve Jobs',
+                author: 'Walter Isaacson',
+                readingStatus: true
+            },
+            {
+                title: 'Mockingjay: The Final Book of The Hunger Games',
+                author: 'Suzanne Collins',
+                readingStatus: false
+            }
+        ];
+        library.forEach(element => {
+            if (element.readingStatus){
+                console.log("Already read "+element.title+" by "+element.author)
+            }
+            else{
+                console.log("You still need to read "+element.title+" by "+element.author)
+            }
+        });
+
+    </script>
+</body>
+
+</html>

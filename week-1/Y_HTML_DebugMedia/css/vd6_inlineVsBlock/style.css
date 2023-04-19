@@ -1,0 +1,28 @@
+/* div{
+    background-color: pink;
+    margin-bottom: 10PX; */
+    /* to make block element to inline */
+    /* display: inline;
+} */
+span{
+    background-color: orange;
+}
+p{
+    background-color: lightblue;
+    /* work as inline in big screen and go for block while get small */
+    display: inline-block;
+    
+}
+div{
+    display: inline-block;/* act as inline when screen reduce go for next line */
+    display: inline;/* if ther is no content nothing will display*/
+    width: 300px;
+    height: 500px;
+    background-color: lightblue;
+}
+
+.div-two{
+    width: 300px;
+    height: 500px;
+    background-color: pink;
+}

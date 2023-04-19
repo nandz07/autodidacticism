@@ -1,0 +1,23 @@
+body{
+    /* body margin get set by defult-so we need to change */
+    margin: 0px;
+    /* what we declared in the body will be commen to every 
+    one untill it get change */
+}
+
+h1{
+    /* h1 also have default margin */
+    margin: 0px;
+    color: red;
+    padding: 10px;
+}
+header{
+    background-color:black;
+    margin-bottom: 10px;
+}
+div{
+    height: 30px;
+    color: white;
+    background-color: brown;
+    border: 2px solid green;
+}

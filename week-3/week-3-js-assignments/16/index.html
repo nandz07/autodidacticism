@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">enter the number</label>
+    
+    <input type="text" name="data" id="data">
+    <button id="btn">submit</button>
+
+    <script>
+      document.getElementById("btn").addEventListener("click",()=>{
+        var data=document.getElementById("data").value
+        var flag=0;
+        for(let i=2;i<=data/2 ;i++){
+            if(data%i==0){
+                flag=1
+                break
+            }
+        }
+        if(flag==0 && data!=1){
+            console.log(data+" is prime number ")
+        }else {
+            console.log(data+" is not prime number")
+        }
+      })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter the mark percentage please </label>
+        <input type="text" name="mark" id="mark">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click",()=>{
+            markPercentage=parseFloat(document.getElementById("mark").value)
+
+            if(markPercentage>=90){
+                console.log("Your grade is A")
+            }
+            else if(markPercentage>=80){
+                console.log("Your grade is B")
+            }
+            else if(markPercentage>=70){
+                console.log("Your grade is C")
+            }
+            else if(markPercentage>=60){
+                console.log("Your grade is D")
+            }
+            else if(markPercentage>=50){
+                console.log("Your grade is E")
+            }
+            else {
+                console.log("Your Failed")
+            }
+        })
+      
+    </script>
+</body>
+
+</html>

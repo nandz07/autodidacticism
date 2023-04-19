@@ -1,0 +1,17 @@
+div p:nth-child(odd){
+    color: white;
+    background-color: brown;
+}
+p::first-letter{
+    color: blue;
+    font-size: 20px;
+}
+p::selection{
+    background-color: yellow;
+}
+p::after{
+    content: " Hello ";
+}
+/* p::before{
+    content: "Hello ";
+} */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myArray=[1,2,3,4]
+       function myFilter (myArray,callback){
+        console.log( callback(myArray))
+       }
+       function oddOrEven(array){
+        sum=0
+            array.forEach(element => {
+              sum+=element  
+            });
+            if(sum%2==0){
+                return true
+            }
+            else{
+                return false
+            }
+       }
+       myFilter(myArray,oddOrEven)
+    </script>
+</body>
+
+</html>

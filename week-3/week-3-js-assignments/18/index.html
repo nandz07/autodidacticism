@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">enter score of written test</label>
+    <input type="text" name="written" id="written"><br>
+    <label for="">enter score of lab test</label>
+    <input type="text" name="lab" id="lab"><br>
+    <label for="">enter score of assignment</label>
+    <input type="text" name="assignment" id="assignment"><br>
+    <button id="btn">submit</button>
+    <script>
+    document.getElementById("btn").addEventListener("click",()=>{
+        var written=document.getElementById("written").value
+        var lab=document.getElementById("lab").value
+        var assignment=document.getElementById("assignment").value
+        var grade=weightedAverage(written,lab,assignment)
+        console.log("Grade of student is "+grade)
+    })
+    function weightedAverage(written,lab,assignment){
+        var grade=(written*70)/100+(lab*20)/100+(assignment*10)/100
+        return grade
+    }
+    </script>
+</body>
+
+</html>

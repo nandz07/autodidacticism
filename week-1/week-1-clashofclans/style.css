@@ -1,0 +1,220 @@
+:root{
+    --font-fam:"ProximaNova-Bold"
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+/* header section */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background: #f69d2d;
+    color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+header .container .ic {
+    display: flex;
+    align-items: center;
+}
+.ic .iic{
+    margin-left: 10px;
+}
+.container .logo{
+    position: absolute;
+    width: 300px;
+    left: 42%;
+    top: 22px;
+}
+/* header end */
+
+/* banner start */
+.banner-container .container img{
+    width: 100%;
+    margin-top: 80px;
+}
+/* banner end */
+
+/* main section */
+.main-container .main{
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top: 34px;
+}
+
+.image-main{
+    display: flex;
+    border-radius: 22px;
+    /* border-radius: -1px; */
+    overflow: hidden;
+    width: 200%;
+    
+}
+.image-main img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.main-container .main .image-main img:hover{
+   transform: scale(1.1);
+}
+.content-main{
+    margin-left: 26px;
+    font-family: var(--font-fam);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 21px;
+}
+.main .content-main h2{
+    font-size: 26px;
+    line-height: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main .content-main span{
+    color: #978036;
+}
+.main .content-main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+/* main end */
+
+/* sub section */
+.sub-container .sub{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 80px;
+
+}
+.sub-container .sub .sub-card{
+    width: 393px;
+    /* height: 600px; */
+    /* border-radius: 38px; */
+    border-top-right-radius: 38px;
+    border-top-left-radius: 38px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+}
+
+.sub-container .sub .sub-card p{
+    font-size: 14px;
+}
+
+.sub-container .sub .sub-card .card-image{
+    height: 239px;
+}
+.sub-container .sub .sub-card .card-image img{
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.sub-container .sub .sub-card .card-image img:hover{
+    transform: scale(1.1);
+}
+.sub-container .sub .sub-card:nth-child(1) div:nth-child(2){
+    background-color: #db8315;
+}
+.sub-container .sub .sub-card:nth-child(2) div:nth-child(2){
+    background-color: #007a00;
+}
+.sub-container .sub .sub-card:nth-child(3) div:nth-child(2){
+    background-color: #163cc4;
+}
+.sub-container .sub .sub-card:nth-child(4) div:nth-child(2){
+    background-color: #007a00;
+}
+.sub-container .sub .sub-card:nth-child(5) div:nth-child(2){
+    background-color: #007a00;
+}
+.sub-container .sub .sub-card:nth-child(6) div:nth-child(2){
+    background-color: #f5c65d;
+}
+.sub-container .sub .sub-card div span{
+    color: white;
+    margin-left: 22px;
+}
+
+.sub-container .vew-all-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-container .vew-all-button button{
+    color: white;
+    background-color: #ffa518;
+    border: none;
+    height: 50px;
+    width: 117px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+}
+/* sub end */
+
+/* footer section */
+.footer-container{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+}
+.footer-container hr{
+    width: 75%;
+}
+.footer-container .footer-first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-container .footer-first .footer-first-left{
+    display: flex;
+    
+}
+.footer-container .footer-first .footer-first-left h6{
+    margin-right: 15px;
+}
+.footer-container .footer-first .footer-first-right{
+    display: flex;
+}
+.footer-container .footer-first .footer-first-right img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+/* ------------ */
+
+.footer-container .footer-second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-container .footer-second .footer-second-left{
+    display: flex;
+}
+.footer-container .footer-second .footer-second-left h6{
+    margin-right: 15px;
+}
+/* .footer-container .footer-second .footer-second-right{
+    display: flex;
+} */
+
+/* footer section */
+
+

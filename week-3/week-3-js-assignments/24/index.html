@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">enter 1 for circle <br>enter 2 for square <br>
+        enter 3 for rectangle <br>enter 4 for triangle <br></label>
+    <input type="text" name="shapes" id="shapes"><br>
+    <p></p>
+    <button id="btn">submit</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",()=>{
+            var shapes=document.getElementById("shapes").value
+            var obj1=new myClass()
+            switch(shapes){
+                case "1":
+                    obj1.circle()
+                    break
+                case "2":
+                    obj1.square()
+                    break
+                case "3":
+                    obj1.rectangle()
+                    break
+                case "4":
+                    obj1.triangle()
+                    break
+                default:
+                    console.log("invalid value")
+            }
+        })
+       class area{
+        circle(){
+            var r=prompt("enter the radius of circle")
+            var a= 3.14*(r**2)
+            console.log("area of circle ="+a)
+        }
+        square(){
+            var l=prompt("enter the length of square")
+            var a=l*l
+            console.log("area of square ="+a)
+        }
+        rectangle(){
+            var l=prompt("enter the length of rectangle")
+            var w=prompt("enter the width of rectangle")
+            var a=l*w
+            console.log("area of rectangle ="+a)
+        }
+        triangle(){
+            var h=prompt("enter the height of triangle")
+            var b=prompt("enter the base of triangle")
+            var a=(h*b)/2
+            console.log("area of triangle ="+a)
+        }
+       }
+       class myClass extends area{
+
+       }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+*{
+    /* box-sizing: border-box; */
+}
+
+div{
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    /* border: none; */
+    box-sizing: border-box;
+}

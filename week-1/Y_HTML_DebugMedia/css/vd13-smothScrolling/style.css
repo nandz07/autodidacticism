@@ -1,0 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+div:nth-child(1){
+    background-color: rgb(240, 159, 93);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div:nth-child(2){
+    background-color: rgb(240, 236, 10);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+}

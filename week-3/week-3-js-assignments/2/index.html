@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-size: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="name">Enter the intiger number please</label>
+        <input type="text" name="num1" id="num1">
+        <br>
+        <label for="name">Enter the float number please</label>
+        <input type="text" name="num2" id="num2">
+        <br>
+        <button type="submit" id="button">submit</button>
+    </div>
+    <script>
+        let btn = document.getElementById("button")
+        btn.addEventListener("click", () => {
+            var num1 =parseInt( document.getElementById("num1").value)
+            var num2 = parseFloat( document.getElementById("num2").value)
+            console.log(num1+num2)
+        })
+    </script>
+</body>
+
+</html>

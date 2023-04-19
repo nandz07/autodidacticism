@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-size: 25px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class a{
+            main() {
+               var a=[[]]
+               return a
+            }
+            getArray(a) {
+                var n=prompt("enter the limit of array")
+                alert("enter the elements of array")
+                for(let i=0;i<n;i++){
+                    for(let j=0;j<n;j++){
+                        a[[i,j]]= prompt("enter the element")
+                    }
+                }
+                return {
+                    "a":a,
+                    "n":n
+                }
+            alert("done")
+            }
+            displayArray(c,n) {
+                var s=""
+                for(let i=0;i<n;i++){
+                    for(let j=0;j<n;j++){
+                        s+=c[[i,j]]+" "
+                    }
+                    s+="\n"
+                }
+                console.log(s)
+            }
+        }
+        var obj1=new a()
+        var b=obj1.main()
+        var c=obj1.getArray(b)
+        obj1.displayArray(c.a,c.n)
+    </script>
+</body>
+
+</html>
