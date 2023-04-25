@@ -36,6 +36,3 @@ let trie=new Trie()
 console.log(trie);
 trie.insert("n")
 console.log(trie.root.children);
-// trie.insert("nanveen")
-// console.log(trie.contain("nan"));
-// console.log(trie.contain("nab"));

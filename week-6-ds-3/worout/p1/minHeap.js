@@ -16,10 +16,12 @@ class MinHeap{
     minHeapify(i){
         let l=this.lChild(i)
         let r=this.rChild(i)
+        console.log(l);
+        console.log(r);
         let smalest=i
         if(l<this.heapSize && this.arr[i]>this.arr[l]){
             smalest=l
-        }if(r<this.heapSize && this.arr[i]>this.arr[r] && this.arr[r]<this.arr[l]){
+        }if(r<this.heapSize && this.arr[i]>this.arr[r]){
             smalest=r
         }
         if(smalest!=i){

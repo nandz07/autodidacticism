@@ -118,7 +118,7 @@ console.log(`preorder`);
 bst.preOrder(bst.root)
 console.log(`inorder`);
 bst.inOreder(bst.root)
-console.log(`lpostOrder`);
+console.log(`postOrder`);
 bst.postOrder(bst.root)
 console.log(`level order`);
 bst.levelOrdder()
