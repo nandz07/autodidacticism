@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<h3>hai {{name}}</h3>
+
+
+{{#each value}}
+
+    <h1>{{@index}}.{{this}}</h1>
+
+{{/each}}
+
+<h1>{{person.comments.comment}}</h1>
+<h1>{{person.comments.date}}</h1>
+<h1>{{person.admin}}</h1>
+
+{{#if person.admin}}
+<h1>This is an admin page</h1>
+{{else}}
+<h1>normal page</h1>
+{{/if}}
+
+
+<p>with</p>
+
+{{#with person.comments}}
+    <h3>{{comment}}</h3>
+    <h3>{{date}}</h3>
+{{/with}}
+
+<a href="">it is a sample link</a>

@@ -21,10 +21,13 @@ for(let i=0;i<arr.length;i++){
 if(l3!=min){
     console.log("l3");
     console.log(l3);
+    return l3
 }else if(l2!=min){
     console.log("l2");
-    console.log(l2);
-}else{
+    console.log(l2)
+    return l2
+}else if(l1!=min){
     console.log("l1");
     console.log(l1);
+    return l1
 }
