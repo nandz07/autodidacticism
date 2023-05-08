@@ -1,5 +1,5 @@
 let arr1=[1,2,3,4,7]
-let arr2=[1,6,3,5,1]
+let arr2=[1,1,6,3,5,1]
 let n=arr1.length
 let m=arr2.length
 
@@ -14,6 +14,7 @@ for(let i=0;i<arr1.length;i++){
                 arr2[k]=arr2[k+1]
             }
             m--
+            j--
             // console.log(m);
         }
     }
@@ -22,6 +23,7 @@ for(let i=0;i<arr1.length;i++){
         for(let x=i;x<n;x++){
             arr1[x]=arr1[x+1]
         }
+        i--
         n--
     }
 }
