@@ -5,6 +5,10 @@ const app = express()
 const session=require("express-session")
 const {v4:uuidv4}=require("uuid")
 
+const nocache = require('nocache');  
+
+app.use(nocache());
+
 const router=require('./router')
 
 const port=process.env.PORT||3000
@@ -28,6 +32,13 @@ app.use('/route',router)
 
 // home root
 app.get('/',(req,res)=>{
+    console.log('hai');
+    console.log(req.session.logedIn);
+    if(req.session.logedIn){
+        res.redirect('/route/dashboard')
+        console.log('if');
+    }
+    console.log('else');
     res.render('base',{titl:"Login System"})
 })
 
