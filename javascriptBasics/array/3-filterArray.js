@@ -31,10 +31,13 @@
 // ---- but athor method is available
 
 
-const number=[1,2,3,2,1,3,3,5,4,6]
+const number=[1,2,3,2,1,3,3,5,4,66]
+// const number=[,0,-1,]
 
 const nums=number.filter((value,index,arr)=>{
     return number.indexOf(value)===index
 })
 console.log(nums);
+
+
 

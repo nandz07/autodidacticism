@@ -21,4 +21,22 @@ letter.forEach(item=>{
         count[item]=1
     }
 })
-console.log(count);
+// console.log(count);
+
+
+// ---------practice ------------
+let b=[]
+b=arr.forEach((item,index,arr) => {
+    console.log('hai');
+    console.log(2*item);
+    b.push(item)
+    return 2*item
+    // console.log(arr);
+});
+console.log(b);
+// console.log(numbDouble);
+
+const numbDoubl=arr.map((value,index,arr)=>{
+    return 2*value
+})
+console.log(numbDoubl);
