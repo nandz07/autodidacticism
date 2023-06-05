@@ -1,0 +1,23 @@
+
+// to look and study
+->passwordCheck
+->addMethod
+
+$(document).ready(function(){
+    jQuery.validator.addMethod("passwordCheck",
+        function(value, element, param) {
+            if (this.optional(element)) {
+                return true;
+            } else if (!/[A-Z]/.test(value)) {
+                return false;
+            } else if (!/[a-z]/.test(value)) {
+                return false;
+            } else if (!/[0-9]/.test(value)) {
+                return false;
+            }
+
+            return true;
+        },
+        "error msg here");
+
+        

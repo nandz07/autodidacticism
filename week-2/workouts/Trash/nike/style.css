@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* head */
+.head-top img,.navbar-brand img{
+    height: 20px;
+}
+.head-top-right{
+    display: flex;
+}
+.head-top-right p{
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+}
+/* head end */
+/* banner */
+.card-img-overlay{
+    bottom: 0;
+}
+.card-content{
+    position: relative;
+    top: -175px;
+}
+div#menu {
+    display: none;
+    position: absolute;
+    top: 105px;
+    left: 110px;
+    z-index: 9;
+}

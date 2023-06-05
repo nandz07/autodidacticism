@@ -1,0 +1,59 @@
+/* div{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+@media(max-width:1000px){
+    div{
+        background-color: cyan;
+    }
+}
+@media(min-width:700px) and (max-width:900px){
+    div{
+        background-color: orange;
+    }
+} */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    flex: 25%;
+    padding: 0 3px;
+    /* overflow: hidden; */
+}
+img{
+    width: 100%;
+    margin: 1px 0;
+    transition: 1s ease-in-out;
+    transform: scale(0.8);
+}
+img:hover{
+    transform: scale(1);
+}
+
+@media (max-width:991px){
+    .section{
+        /* flex:33.3333% */
+        flex:calc(100%/3);
+    }
+}
+@media (max-width:767px){
+    .section{
+        flex:50%
+    }
+}
+@media (max-width:567px){
+    .section{
+        flex:100%
+    }
+}
+
+

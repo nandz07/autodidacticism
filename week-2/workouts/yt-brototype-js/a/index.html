@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen{
+            width: 300px;
+            height: 300px;
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="display()"> click me</button>
+
+    <input type="text" name="name" id="shho">
+    <button onclick="show()">click </button>
+    <h1 id="hshoo"></h1>
+    <div class="color" id="screen">
+
+    </div>
+    <button id="color" onclick="color('red')">red</button>
+    <button id="color" onclick="color('green')">green</button>
+    <button id="color" onclick="color('blue')">blue</button>
+    <button id="color" onclick="color('yellow')">yellow</button>
+
+    <script>
+
+        function color(color){
+            document.getElementById("screen").style.background=color;
+        }
+
+        function display(){
+            alert("button clicked");
+            var a=1;
+            var b=2;
+            var sum=a+b;
+            alert("sum="+sum);
+        }
+        var person=[{name:"nandu",age:25},{name:"abi",age:25}];
+        console.log(person);
+        
+        var abc=[{},{}]
+        console.log(abc);
+
+        let show=()=>{
+            let a=document.getElementById("shho").value;
+            document.getElementById("hshoo").innerHTML=a;
+            if(a=="nandu"){
+                alert(a);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
