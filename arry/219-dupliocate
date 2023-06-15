@@ -1,0 +1,50 @@
+// var containsNearbyDuplicate = function(nums, k) {
+//     n=nums.length
+//     for(let i=0;i<n-1;i++){
+//         for(let j=i+1;j<n;j++){
+//             if(nums[i]==nums[j]){
+//                 if((j-i)<=k){
+//                     return true
+//                 }
+//             }
+//         }
+//     }
+//     return false
+// };
+// leet code 
+var containsNearbyDuplicate = function(nums, k) {
+    let window = new Set();
+  for (let i = 0; i < nums.length; i++) {
+    if (window.has(nums[i])) {
+        // console.log(window);
+        return true;
+    }
+    window.add(nums[i]);
+
+    if (i >= k){
+        console.log(window);
+        window.delete(nums[i - k]);
+    } 
+  }
+  console.log(window);
+  return false;
+};
+
+
+
+let abc= (nums ,k)=>{
+let s=new Set()
+    for(let i=0;i<nums.length;i++){
+        if(s.has(nums[i])){
+            return true
+        }
+        s.add(nums[i])
+        if(i>=k){
+            s.delete(nums[i-k])
+        }
+    }
+    return false
+}
+nums = [1,2,3,4,5,6,3,2,1], k = 3
+let res=abc(nums,k)
+console.log(res);
