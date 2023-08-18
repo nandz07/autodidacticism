@@ -1,0 +1,19 @@
+https://www.youtube.com/watch?v=gDNmbElLfcM&list=PLDkmTW84K1nuHnbviOtwf32sDmrom1zSi&index=2
+
+2.
+CREATE TABLE emp(
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL ,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    date_of_birth DATE);
+
+3.
+INSERT INTO emp (name,email,date_of_birth)
+VALUES('appu','appu@gmail.com','1995-01-01');
+
+SELECT DISTINCT date_of_birth FROM emp;
+
+->distinct used for eliminate repeating value
+
+
+SELCET * FROM person WHERE gender = 'Male' or geder = 'Female';

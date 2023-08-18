@@ -1,0 +1,109 @@
+\c test - for connection to database test
+
+How to create table 
+
+test=# CREATE TABLE person (
+test(# id INT,
+test(# first_name VARCHAR(50),
+test(# last_name VARCHAR(50),
+test(# gender VARCHAR(50),
+test(#  date_of_birth DATE);
+
+test=# \d
+         List of relations
+ Schema |  Name  | Type  |  Owner
+--------+--------+-------+----------
+ public | person | table | postgres
+(1 row)
+
+--------- output -------------
+test=# \d person
+                         Table "public.person"
+    Column     |         Type          | Collation | Nullable | Default
+---------------+-----------------------+-----------+----------+---------
+ id            | integer               |           |          |
+ first_name    | character varying(50) |           |          |
+ last_name     | character varying(50) |           |          |
+ gender        | character varying(50) |           |          |
+ date_of_birth | date                  |           |          |
+
+DROP TABLE person;
+
+14:00 16-08-2023
+
+15)How to insert records into tables
+
+INSERT INTO person (first_name,last_name,gender,date_of_birth,email)
+VALUES('Kunju','Ottan','male',date '1997-01-11','kunju@gmail.com');
+VALUES('Appu','Kuttan','male',date '1997-01-11');
+
+\i C:/Users/HP/Downloads/person.sql
+
+
+ SELECT * FROM person ORDER BY country_of_birth;
+
+20)distinct
+
+SELECT country_of_birth FROM person ORDER BY country_of_birth;
+
+21)WHERE clause and AND
+
+WHERE  clause allow us to filter data based on condition
+
+SELECT * FROM PERSON WHERE gender ='Female';
+
+SELECT * FROM person WHERE gender = 'Male' AND country_of_birth = 'Poland';
+
+SELECT * FROM person WHERE gender = 'Male' AND (country_of_birth = 'Poland' OR country_of_birth = 'China');
+
+SELECT * FROM person WHERE gender = 'Male' AND (country_of_birth = 'Poland' OR country_of_birth = 'China') AND last_name ='Dougal';
+
+22) comparison operator
+
+SELECT 1=1;
+->TRUE
+SELECT 1=2;
+->FALSE
+SELECT 'NANDAKUMAR'='NANDAKUMARS';
+->FALSE
+SELECT 'NANDAKUMAR'='NANDAKUMAR';
+->TRUE
+
+
+23) IN 
+
+SELECT * FROM person WHERE country_of_birth ='China' 
+OR country_of_birth = 'France' OR country_of_birth ='Brazil';
+
+SELECT * FROM person WHERE country_of_birth IN ('China','Brazil','France','Mexico');
+SELECT * FROM person WHERE country_of_birth IN ('China','Brazil','France','Mexico') ORDER BY country_of_birth;
+
+24 ) BETWEEN
+
+SELECT * FROM person WHERE date_of_birth DATE '2000-01-01' AND '2015-01-01';
+
+25 ) LIKE
+SELECT * FROM person WHERE email LIKE '%@gooogle.%';
+
+SELECT * FROM person WHERE email LIKE '_______@%';
+
+SELECT * FROM person WHERE country_of_birth LIKE 'p%';
+
+26) GROUP BY
+
+SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth;
+
+SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth ORDER BY country_of_birth;
+
+27) GROUP BY HAVING
+
+SELECT country_of_birth,COUNT(*) FROM person GROUP BY country_of_birth HAVING COUNT > 5 ORDER BY country_of_birth;
+
+
+
+
+
+
+
+
+
