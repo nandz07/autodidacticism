@@ -4,14 +4,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {configureStore} from "@reduxjs/toolkit"
 import {Provider} from 'react-redux'
-import userReducer from "./components/features/user"
+import userReducer from "./features/user"
+import themeReducer from "./features/theme"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const store=configureStore({
   reducer:{
-    user : userReducer
+    user : userReducer,
+    theme:themeReducer
   },
 })
  
