@@ -23,10 +23,10 @@
 //     })();
 
 const promise1 = new Promise((resolve, reject) => {
-    // setInterval(() => {
-    // resolve(["javascript", "java"])
-    reject('failed')
-    // }, 1000);
+    setInterval(() => {
+    resolve(["javascript", "java"])
+    // reject('failed')
+    }, 1000);
 });
 
 (async function (){
