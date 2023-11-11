@@ -1,10 +1,10 @@
 import './App.css';
-import CallbackTutorial from './UseCallback/CallbackTutorial';
+import Home from './CoustomHook/Home';
 
 function App() {
   return (
     <div className="App">
-      <CallbackTutorial />
+      <Home />
     </div>
   );
 }
