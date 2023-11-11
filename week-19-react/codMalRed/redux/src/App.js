@@ -1,11 +1,16 @@
+import IncrementDecrement from "./components/IncrementDecrement";
+import { Provider } from 'react-redux'
+import store from "./redux/store";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <button>Increment</button>
-      0
-      <button>decrement</button>
-    </div>
+    <>
+      <Provider store={store}>
+        <IncrementDecrement />
+      </Provider>
+    </>
   );
 }
 
