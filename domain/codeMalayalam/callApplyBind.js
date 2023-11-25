@@ -11,3 +11,15 @@ console.log(myObj);
 
 let abc=myObj.c
 abc()
+
+
+function greet(name){
+    console.log(name);
+}
+
+function greetMe(){
+    let name='nandu'
+    greetfun(name)
+}
+
+greetMe(greet)
