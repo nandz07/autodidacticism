@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing and Bubbling Example</title>
+    <style>
+        div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="outer">
+    <div id="middle">
+        <div id="inner">Click me!</div>
+    </div>
+</div>
+
+<script>
+    // Bubbling Phase Example
+    document.getElementById('outer').addEventListener('click', function() {
+        console.log('Bubbling: Clicked on outer div');
+    });
+
+    document.getElementById('middle').addEventListener('click', function() {
+        console.log('Bubbling: Clicked on middle div');
+    });
+
+    document.getElementById('inner').addEventListener('click', function() {
+        console.log('Bubbling: Clicked on inner div');
+    }, false); // Specify false to use the bubbling phase (default)
+
+    // Capturing Phase Example
+    document.getElementById('outer').addEventListener('click', function() {
+        console.log('Capturing: Clicked on outer div');
+    }, true); // Specify true to use the capturing phase
+
+    document.getElementById('middle').addEventListener('click', function() {
+        console.log('Capturing: Clicked on middle div');
+    }, true);
+
+    document.getElementById('inner').addEventListener('click', function() {
+        console.log('Capturing: Clicked on inner div');
+    }, true);
+</script>
+
+</body>
+</html>
