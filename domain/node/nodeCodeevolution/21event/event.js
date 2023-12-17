@@ -14,3 +14,12 @@ emmiter.on('order-pizza',(size)=>{
 
 console.log('shop open');
 emmiter.emit('order-pizza',"large","mushroom")
+emmiter.removeAllListeners('order-pizza');
+
+emmiter.addListener('order-pizza',(size)=>{
+    if(size === "large"){
+        console.log("serving comlimentary drink");
+    }
+})
+
+emmiter.emit('order-pizza',"large","mushroom")

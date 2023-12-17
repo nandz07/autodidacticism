@@ -1,39 +1,18 @@
-function deepFreeze(obj) {
-    // Get the property names defined on the object
-    var propNames = Object.getOwnPropertyNames(obj);
-  
-    // Freeze properties before freezing self
-    propNames.forEach(function(name) {
-      var prop = obj[name];
-  
-      // Freeze prop if it is an object
-      if (typeof prop === 'object' && prop !== null) {
-        deepFreeze(prop);
-      }
-    });
-  
-    // Freeze the object itself
-    return Object.freeze(obj);
-  }
-  
-  // Example usage
-  var myObject = {
-    prop1: 'value1',
-    prop2: {
-      nestedProp1: 'nestedValue1',
-      nestedProp2: 'nestedValue2'
-    }
-  };
-  
-  deepFreeze(myObject);
-  
-  // Attempting to modify the frozen object will result in an error
-  // myObject.prop1 = 'new value'; // This will throw an error
-  // myObject.prop2.nestedProp1 = 'new nested value'; // This will throw an error
-myObject.prop2.nestedProp1='hai'  
-console.log(myObject);
+const obj = {};
 
+const symbolKey = Symbol('myKey');
+const abc=Symbol('myKey')
+const regularKey = 'myKey';
 
+obj[symbolKey] = 'This is a symbol key';
+obj[regularKey] = 'This is a regular key';
+obj[abc] = 'abc';
+obj['myKey']='something new'
+obj[Symbol('myKey')]='aaaaaaaaaaaaaaaaaaaaa'
 
-console.log(Object.getOwnPropertyNames(myObject));
-console.log(Object.keys(myObject));
+console.log(obj[symbolKey]); // Output: This is a symbol key
+console.log(obj[regularKey]); // Output: This is a regular key
+console.log(obj[abc]); // Output: This is a regular key
+console.log(obj); // Output: This is a regular key
+
+console.log(Symbol('myKey')==Symbol('myKey'));
